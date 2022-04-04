@@ -57,15 +57,12 @@
 <script>
 import ContainerViews from "./components/ContainerViews.vue";
 import Footer from "./components/Footer.vue";
-
 export default {
   name: "App",
-
   components: {
     ContainerViews,
     Footer,
   },
-
   data: () => ({
     // menu: [
     //   { icon: "home", title: "SERVICIOS" },

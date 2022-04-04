@@ -119,7 +119,7 @@ h1 {
   z-index: 1 !important;
   display: flex;
   margin-left: 7%;
-  margin-top: 15%;
+  margin-top: 25%;
 }
 .head-c {
   font-family: "Playfair Display", serif;

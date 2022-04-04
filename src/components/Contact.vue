@@ -25,7 +25,8 @@
                       </p>
                       <p />
                       <p class="txtito pr-10">
-                        Brickell City Centre, 78 SW 7th Street, 33130, Miami, Florida
+                        Brickell City Centre, 78 SW 7th Street, 33130, Miami,
+                        Florida
                       </p>
                       <v-btn
                         outlined
@@ -49,7 +50,8 @@
                       </p>
                       <p />
                       <p class="txtito pr-10">
-                        Monte Elbruz 37, Piso 10 Lomas de Chapultepec, Miguel Hidalgo 11000, CDMX
+                        Monte Elbruz 37, Piso 10 Lomas de Chapultepec, Miguel
+                        Hidalgo 11000, CDMX
                       </p>
                       <v-btn
                         outlined
@@ -73,7 +75,8 @@
                       </p>
                       <p />
                       <p class="txtito pr-10">
-                        Serrano 63, Escalera Castellana 1° izquierda 28010, Madrid, España
+                        Serrano 63, Escalera Castellana 1° izquierda 28010,
+                        Madrid, España
                       </p>
                       <v-btn
                         outlined
@@ -97,7 +100,8 @@
                       </p>
                       <p />
                       <p class="txtito pr-10">
-                        The Galleria 5065 Westheimer Rd. Suite 1130 77056, Houston, Tx.
+                        The Galleria 5065 Westheimer Rd. Suite 1130 77056,
+                        Houston, Tx.
                       </p>
                       <v-btn
                         outlined
@@ -121,7 +125,8 @@
                       </p>
                       <p />
                       <p class="txtito pr-10">
-                        Central Park Armando B. Shaffer 2001 Int. 4c, Centro Sur 76090, Querétaro, Qro.
+                        Central Park Armando B. Shaffer 2001 Int. 4c, Centro Sur
+                        76090, Querétaro, Qro.
                       </p>
                       <v-btn
                         outlined
@@ -145,7 +150,8 @@
                       </p>
                       <p />
                       <p class="txtito pr-10">
-                        Marqués de San Esteban 1-3°, Puerta 7Int. 4c, Centro Sur 33206 Gijón, Asturias, España
+                        Marqués de San Esteban 1-3°, Puerta 7Int. 4c, Centro Sur
+                        33206 Gijón, Asturias, España
                       </p>
                       <v-btn
                         outlined
@@ -169,7 +175,8 @@
                       </p>
                       <p />
                       <p class="txtito pr-10">
-                        Torre Sol Av. Bonampak 200, Desp. 115 Lote 4B, Mza.,SMza. 4A 77500, Cancún, Q.Roo
+                        Torre Sol Av. Bonampak 200, Desp. 115 Lote 4B,
+                        Mza.,SMza. 4A 77500, Cancún, Q.Roo
                       </p>
                       <v-btn
                         outlined
@@ -225,11 +232,7 @@
                   </p>
                   <div class="hrr mt-4 mb-8"></div>
                   <div class="d-flex phone-e">
-                    <a
-                      href="mailto:info@alegantto.com"
-                      style="text-decoration: none; color: inherit"
-                      ><v-icon color="#3B3A3B" class="mr-4">mdi-mail</v-icon></a
-                    >
+                    <v-icon color="#3B3A3B" class="mr-6 ml-1">mdi-mail</v-icon>
                     <p class="ma-0 pa-0 ml-5" style="color: #fff">
                       <a
                         href="mailto:info@alegantto.com"
@@ -308,7 +311,7 @@ export default {
 .phone-e {
   display: flex;
   align-items: center;
-  background: linear-gradient(90deg, #e6e1e2 12%, #707070 10%);
+  background: linear-gradient(90deg, #e6e1e2 3.5rem, #707070 3rem);
   padding: 0.8rem;
 }
 .hrr {
