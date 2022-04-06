@@ -1,11 +1,10 @@
 <template>
   <div style="width: 100vw" class="d-flex flex-column align-end" id="alianza">
     <v-card
-      class="d-flex justify-space-between ma-0 pa-0"
+      class="d-flex justify-space-between ma-0 pa-0 card-al"
       color="transparent"
       elevation="0"
       tile
-      width="85%"
     >
       <div class="cont-a ma-0 pa-0">
         <div class="d-flex flex-column align-start sec1-a">
@@ -40,8 +39,14 @@ export default {};
 </script>
 
 <style>
+#alianza{
+  margin-top: 5%;
+}
 .cont-a {
   position: relative;
+}
+.card-al {
+  width: 85%;
 }
 .sec1-a {
   padding-left: 15%;
@@ -53,7 +58,7 @@ export default {};
 }
 .color-block {
   width: 100% !important;
-  height: 35% !important;
+  height: 50% !important;
   position: absolute;
   margin-top: 20%;
   background: linear-gradient(180deg, #e6e1e2 100%, #3b3a3b 30%);
@@ -78,5 +83,40 @@ export default {};
   margin-top: -7%;
   margin-left: 10%;
   position: absolute;
+}
+@media only screen and (max-width: 640px) {
+#alianza{
+  margin-top: 30%;
+}
+  .card-al {
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+  }
+  .sec1-a {
+    padding: 0 1rem 0 1rem;
+  }
+  .sec1-a .txt-e {
+    width: 100%;
+  }
+  .color-block {
+    display: none;
+  }
+  .sec2-a {
+    width: 100%;
+    padding-top: 10%;
+  }
+  .img-bottom {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 6rem;
+  }
+  .img-bottom .im-bo {
+    width: 80% !important;
+    margin-top: -5%;
+    margin-left: 35%;
+    position: absolute;
+  }
 }
 </style>

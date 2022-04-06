@@ -1,13 +1,34 @@
 <template>
-  <div class="ma-0 pa-0 principal-home">
+  <div class="ma-0 pa-0 principal-home" id="home">
     <div class="logo">
       <div class="logo-home">
         <div class="logo"></div>
       </div>
     </div>
     <div class="container-video">
-      <video width="100%" height="100%" style="top: 0; left: 0" loop autoplay muted playsinline>
+      <video
+        width="100%"
+        height="100%"
+        style="top: 0; left: 0"
+        loop
+        autoplay
+        muted
+        playsinline
+        class="hidden-sm-and-down"
+      >
         <source src="../assets/fb_cover.mp4" type="video/mp4" />
+      </video>
+      <video
+        width="100%"
+        height="100%"
+        style="top: 0; left: 0"
+        loop
+        autoplay
+        muted
+        playsinline
+        class="d-md-none d-lg-none"
+      >
+        <source src="../assets/cover_alegantto_mobile.mp4" type="video/mp4" />
       </video>
     </div>
   </div>
@@ -18,7 +39,7 @@ export default {};
 </script>
 
 <style>
-.principal-home{
+.principal-home {
   width: 100vw !important;
 }
 .container-video {
@@ -52,5 +73,19 @@ export default {};
   background-repeat: no-repeat;
   background-size: 10rem;
   background-position: 50% 35%;
+}
+@media only screen and (max-width: 640px) {
+.logo {
+  width: 50vw;
+  justify-content: flex-start;
+  margin-left: 1rem;
+}
+.logo-home {
+  padding-right: 1rem;
+  padding-top: 1rem;
+  width: 100%;
+  height: 50%;
+  margin-top: -2rem;
+}
 }
 </style>

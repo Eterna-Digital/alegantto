@@ -1,6 +1,6 @@
 <template>
   <div style="width: 100vw" class="d-flex flex-column cont-enf" id="servicios">
-    <v-card width="35%" elevation="0" color="transparent" class="cont-txt-e">
+    <v-card elevation="0" color="transparent" class="cont-txt-e">
       <div class="d-flex flex-column txt-sec">
         <p class="font-weight-bold">NUESTRO SERVICIO</p>
         <span class="hr"></span>
@@ -26,13 +26,13 @@
           <v-img src="../assets/01_img-servicios.jpg" />
         </div>
         <v-card class="txt-mini" elevation="4" tile color="#FFF">
-          <div class="d-flex align-center justify-center pt-6 pb-6">
+          <div class="txt-m-sub d-flex align-center justify-center pt-6 pb-6">
             <div><v-icon>mdi-briefcase-variant</v-icon></div>
-            <div class="d-flex flex-column ml-4">
+            <div class="d-flex flex-column mini-t">
               <p class="head-c pa-0 ma-0">Con una vocación internacional</p>
               <p class="txt-c pa-0 ma-0">
-                Somos un despacho joven, tratamos cada proyecto <br />
-                con pasión y entusiamo
+                Somos un despacho joven, tratamos cada proyecto con pasión y
+                entusiamo
               </p>
             </div>
           </div>
@@ -42,22 +42,14 @@
         </div>
       </div>
     </v-card>
-    <v-card color="teal" class="d-flex justify-center card-cita">
+    <v-card class="d-flex justify-center card-cita">
       <div class="d-flex flex-column cita">
-        <v-img
-          src="../assets/comillas superior.svg"
-          width="40px"
-          class="comi-1"
-        />
+        <v-img src="../assets/comillas superior.svg" class="comi-1" />
         <h1>
           Para nosotros cada cliente es único,<br />
           nos importan las personas y no el negocio.
         </h1>
-        <v-img
-          src="../assets/comillas inferior.svg"
-          width="40px"
-          class="comi-2"
-        />
+        <v-img src="../assets/comillas inferior.svg" class="comi-2" />
       </div>
     </v-card>
   </div>
@@ -75,7 +67,7 @@ export default {};
   background-position: left 40%;
 }
 .cont-txt-e {
-  border: 2px solid geen;
+  width: 35%;
   margin-left: 15%;
   margin-top: 8%;
 }
@@ -100,12 +92,13 @@ h1 {
   align-items: start !important;
   justify-content: flex-end;
   margin-top: 5%;
-  margin-bottom: 25%;
+  margin-bottom: 10%;
 }
 .cont-card {
   display: flex;
   width: 65%;
   margin-top: 10%;
+  /* border: 2px solid gold; */
 }
 .img1-e {
   width: 50%;
@@ -118,8 +111,12 @@ h1 {
   position: absolute !important;
   z-index: 1 !important;
   display: flex;
-  margin-left: 7%;
+  margin-left: 10%;
   margin-top: 25%;
+  padding: 0 1.5rem 0 1.5rem;
+}
+.mini-t {
+  margin-left: 5%;
 }
 .head-c {
   font-family: "Playfair Display", serif;
@@ -129,7 +126,7 @@ h1 {
   font-size: 0.8rem;
 }
 .img2-e {
-  width: 50%;
+  width: 60%;
   position: relative;
   display: flex;
   align-items: center;
@@ -150,13 +147,101 @@ h1 {
   margin-bottom: 5%;
 }
 .cita .comi-1 {
+  width: 40px;
   margin-left: 14%;
   margin-top: -1.3rem;
   position: absolute;
 }
 .cita .comi-2 {
+  width: 40px;
   margin-left: 82%;
   position: absolute;
   margin-top: 20%;
+}
+@media only screen and (max-width: 640px) {
+  .cont-enf {
+    align-items: center;
+    background-size: contain;
+    background-position: left 40%;
+  }
+  .cont-txt-e {
+    display: flex;
+    justify-content: center;
+    padding: 0 1rem 0 1rem;
+    width: 100%;
+    margin-left: 0%;
+    margin-top: 20%;
+  }
+  .cont-imgs-e {
+    align-items: center !important;
+    justify-content: center;
+    margin-top: 5%;
+    margin-bottom: 15%;
+  }
+  .cont-card {
+    justify-content: center !important;
+    width: 100%;
+    margin-top: 10%;
+    margin-left: 0 !important;
+  }
+  .img1-e {
+    width: 50vw !important;
+  }
+  .txt-mini {
+    width: 90vw !important;
+    margin-left: 0%;
+    margin-top: 60%;
+  }
+  .txt-m-sub {
+    flex-direction: column;
+  }
+  .mini-t {
+    margin-left: 0%;
+  }
+  .head-c {
+    text-align: center;
+  }
+  .txt-c {
+    width: 100%;
+    text-align: center;
+  }
+  .img2-e {
+    width: 50%;
+    position: relative;
+    display: flex;
+    align-items: center;
+  }
+  .card-cita {
+    margin-bottom: 15%;
+    margin-top: 55%;
+    width: 90vw;
+  }
+  .cita {
+    width: 100%;
+    margin-top: -13%;
+    padding: 0 1rem 0 1rem;
+  }
+  .cita h1 {
+    font-size: 1rem;
+    text-align: center;
+  }
+  .cita .comi-1 {
+    width: 30px;
+    margin-left: 5%;
+    margin-top: -1.3rem;
+    position: absolute;
+  }
+  .cita .comi-2 {
+    width: 30px;
+    margin-left: 75%;
+    position: absolute;
+    margin-top: 30%;
+  }
+}
+@media only screen and (min-width: 768px) {
+  .card-cita {
+    position: relative;
+    margin-top: 20%;
+  }
 }
 </style>

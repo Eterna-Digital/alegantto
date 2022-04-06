@@ -1,11 +1,11 @@
 <template>
-  <div class="contact-container">
+  <div class="contact-container" id="contacto">
     <div class="background-cont">
-      <v-card width="65%" class="cont-card" color="transparent" elevation="0">
+      <v-card class="cont-card" color="transparent" elevation="0">
         <v-container fluid grid-list-md>
           <v-layout row wrap d-flex justify-space-between>
-            <v-flex d-flex justify-start xs12 sm12 md3>
-              <div class="d-flex flex-column justify-start">
+            <v-flex d-flex justify-start xs12 sm12 md5>
+              <div class="d-flex flex-column justify-start scroll-div">
                 <h1 class="mt-0 mb-4">Contacto</h1>
                 <p class="txtito pr-10">Encuentranos en:</p>
                 <v-virtual-scroll
@@ -13,8 +13,7 @@
                   height="400"
                   item-height="1000"
                   :items="items"
-                  width="280"
-                  class="pa-0"
+                  class="pa-0 scroll"
                 >
                   <v-list-item class="pa-0 ma-0">
                     <div class="ma-0 pa-0">
@@ -194,19 +193,17 @@
                 </v-virtual-scroll>
               </div>
             </v-flex>
-            <v-flex d-flex justify-end align-center xs12 sm12 md8>
-              <v-card
-                tile
-                color="#3B3A3B"
-                class="pa-12 d-flex flex-column dudas"
-              >
-                <p class="textito" style="color: #fff">
+            <v-flex class="v-flex-d" d-flex align-center xs12 sm12 md7>
+              <v-card tile color="#3B3A3B" class="d-flex flex-column dudas">
+                <p class="textito at" style="color: #fff">
                   ATENDEREMOS TODAS TUS DUDAS
                 </p>
                 <div class="hr"></div>
-                <div class="d-flex">
-                  <div class="d-flex flex-column">
-                    <p class="textito caption" style="color: #fff">MADRID</p>
+                <div class="d-flex phones">
+                  <div class="d-flex flex-column madrid">
+                    <p class="textito tito caption" style="color: #fff">
+                      MADRID
+                    </p>
                     <div class="d-flex phone-c">
                       <v-icon color="#3B3A3B" class="mr-4">mdi-phone</v-icon>
                       <p class="ma-0 pa-0 ml-5" style="color: #fff">
@@ -214,11 +211,11 @@
                       </p>
                     </div>
                   </div>
-                  <div class="d-flex flex-column">
-                    <p class="textito caption ml-5" style="color: #fff">
+                  <div class="d-flex flex-column asturias">
+                    <p class="textito tito caption" style="color: #fff">
                       ASTURIAS
                     </p>
-                    <div class="d-flex phone-c ml-5">
+                    <div class="d-flex phone-c">
                       <v-icon color="#3B3A3B" class="mr-4">mdi-phone</v-icon>
                       <p class="ma-0 pa-0 ml-5" style="color: #fff">
                         91 426 14 40
@@ -226,8 +223,8 @@
                     </div>
                   </div>
                 </div>
-                <div class="d-flex flex-column mt-10">
-                  <p class="textito caption ma-0 pa-0" style="color: #fff">
+                <div class="d-flex flex-column mt-10 email-c">
+                  <p class="textito tito caption ma-0 pa-0" style="color: #fff">
                     EMAIL
                   </p>
                   <div class="hrr mt-4 mb-8"></div>
@@ -277,6 +274,7 @@ export default {
   display: flex;
   justify-content: center;
   margin-bottom: 20%;
+  margin-top: 0 !important;
 }
 .background-cont {
   width: 100vw;
@@ -284,39 +282,147 @@ export default {
   align-items: center;
   justify-content: center;
 }
-
 .cont-card {
+  width: 75%;
   display: flex;
   align-items: center;
   margin: 0;
-  margin-top: 5%;
-  margin-left: 10%;
+  margin-top: 0%;
+}
+.scroll-div {
+  width: 90%;
+}
+.v-flex-d {
+  width: 100%;
+  justify-content: flex-end !important;
 }
 .dudas {
-  width: 90%;
+  width: 100%;
   height: 100%;
   justify-content: center;
+  padding: 2.5rem;
 }
 .arrow-c {
   width: 2rem;
   height: 2rem;
   background-image: url("../assets/arrow.svg");
 }
+.at {
+  margin-left: 1rem;
+  margin-bottom: 3rem !important;
+}
+.phones {
+  flex-direction: row !important;
+  align-items: center;
+  justify-content: center;
+}
 .phone-c {
   display: flex;
   align-items: center;
-  background: linear-gradient(90deg, #e6e1e2 30%, #707070 30%);
+  background: linear-gradient(90deg, #e6e1e2 3rem, #707070 3rem);
   padding: 0.8rem;
+  /* padding-right: 3rem !important; */
+  margin-left: 1rem;
+  width: 100%;
+}
+.tito {
+  margin-left: 1rem;
+}
+.asturias {
+  margin-left: 1.3rem !important;
 }
 .phone-e {
   display: flex;
   align-items: center;
   background: linear-gradient(90deg, #e6e1e2 3.5rem, #707070 3rem);
   padding: 0.8rem;
+  width: 90%;
+}
+.email-c {
+  margin-left: 3%;
+  width: 90%;
 }
 .hrr {
   width: 25% !important;
   height: 1px !important;
   background-color: #ffffff;
+}
+.v-flex-d {
+  justify-content: flex-end !important;
+}
+
+@media only screen and (max-width: 640px) {
+  .contact-container {
+    background-size: 100%;
+    background-position: 0 1%;
+    margin-top: 10%;
+  }
+  .background-cont {
+    flex-direction: column;
+  }
+  .cont-card {
+    width: 100%;
+    justify-content: center;
+  }
+  .scroll {
+    width: 100vw !important;
+  }
+  .v-flex-d {
+    justify-content: center !important;
+  }
+  .v-flex-d {
+    justify-content: flex-start !important;
+  }
+  .dudas {
+    margin-top: 40%;
+    margin-bottom: 30%;
+    width: 100%;
+    margin-left: 0%;
+    padding: 1rem;
+  }
+  .phones {
+    flex-direction: column !important;
+    justify-content: flex-start !important;
+  }
+  .phone-c {
+    margin-left: 0rem;
+    width: 100% !important;
+  }
+  .tito {
+    margin-left: 0rem;
+  }
+  .asturias,
+  .madrid {
+    width: 100%;
+    margin-left: 0 !important;
+    margin-top: 2rem;
+  }
+  .email-c {
+    margin-left: 0%;
+    width: 100% !important;
+  }
+}
+@media only screen and (min-width: 768px) {
+  .contact-container {
+    background-size: 100%;
+  }
+  .scroll {
+    width: 40vw !important;
+  }
+  .v-flex-d {
+    justify-content: flex-end !important;
+  }
+  .dudas {
+    margin-left: 0;
+    margin-top: 20%;
+    margin-bottom: 00%;
+  }
+  .phones {
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+  .v-flex-d {
+    justify-content: flex-start !important;
+  }
 }
 </style>

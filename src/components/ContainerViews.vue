@@ -21,6 +21,7 @@ export default {
   width: 100vw !important;
   margin: 0;
   padding: 0;
+  overflow-x:hidden;
   background-color: #f4f4f4;
 }
 </style>
