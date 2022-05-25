@@ -9,16 +9,18 @@
         <div class="hrc"></div>
         <h1 class="mt-4 mb-4">Nuestros clientes</h1>
         <p class="txt-e">
-          En el caso de España, nuestros clientes principales son empresas PYMES
-          y sobre todo empresas familiares. Al tener una alianza consolidada se
-          nos abre la posibilidad de atender a las empresas con intereses en
-          España o en Mexico, brindando nuestros servicios en cualquier parte
-          del mundo respondiendo por el resultado, buscando siempre la major
-          opción possible para nuestros clientes.
+          Abrimos las puertas a todas las empresas que buscan a un aliado para
+          sus negocios, para crecer sus metas, y en especial a todos aquellos
+          que buscan respaldar sus intereses. Gracias a que contamos con
+          despachos en gran parte del mundo esto nos respalda para brindar las
+          soluciones que nuestros clientes buscan. Atendemos grandes empresas,
+          holdings internacionales, gobierno y fundaciones, para todos tenemos
+          experiencia para enfocar su negocio y ayudarles con soluciones
+          puntales hechas a la medida.
         </p>
       </div>
     </v-card>
-    <div class="d-flex justify-center">
+    <!-- <div class="d-flex justify-center">
       <v-card
         class="d-flex flex-column align-center card-clients2"
         color="transparent"
@@ -99,7 +101,7 @@
           </v-layout>
         </v-container>
       </v-card>
-    </div>
+    </div> -->
   </div>
 </template>
 
@@ -127,7 +129,7 @@ export default {};
 .img1-e {
   width: 60%;
   display: flex;
-  justify-content: flex-start;
+  justify-content: center;
 }
 .img1-e img {
   width: 100% !important;
@@ -138,6 +140,7 @@ export default {};
   display: flex;
   flex-direction: column;
   justify-content: center;
+  align-items: flex-start !important;
 }
 .txtito {
   font-family: "Montserrat", sans-serif;

@@ -1,7 +1,7 @@
 <template>
   <v-app>
     <v-app-bar app color="#CFC6C9" elevate-on-scroll hide-on-scroll>
-      <div class="logo-nav hidden-sm-and-down"></div>
+      <div class="logo-nav hidden-sm-and-down" ref="sortMenu"></div>
       <v-toolbar
         class="menu-nav ma-0 pa-0"
         height="100%"
@@ -72,7 +72,7 @@
     </v-app-bar>
 
     <v-main class="pa-0 ma-0">
-      <router-view/>
+      <router-view />
       <ContainerViews />
     </v-main>
     <Footer />
@@ -96,6 +96,9 @@ export default {
       { icon: "warning", title: "CONTACTO" },
     ],
   }),
+  mounted() {
+    window.addEventListener("scroll", this.handleScroll);
+  },
   methods: {
     menuItems() {
       return this.menu;
@@ -151,6 +154,13 @@ export default {
   /* border: 3px solid #000; */
   margin-top: 0.5rem;
   margin-right: 6%;
+  transform: translateZ(0);
+  perspective: 1000px;
+  backface-visibility: hidden;
+  transition: 1.5s all cubic-bezier(0.39, 0.575, 0.565, 1);
+}
+.show {
+  border: 2px solid red;
 }
 .link-nav p {
   margin-top: 1rem;

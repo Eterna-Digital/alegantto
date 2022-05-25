@@ -57,15 +57,7 @@ export default {};
   align-items: center;
   justify-content: flex-end;
 }
-.logo-home {
-  width: 60%;
-  height: 100%;
-  z-index: 100 !important;
-  background-color: #fff;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
+
 .logo-home .logo {
   width: 100%;
   height: 100%;
@@ -75,17 +67,17 @@ export default {};
   background-position: 50% 35%;
 }
 @media only screen and (max-width: 640px) {
-.logo {
-  width: 50vw;
-  justify-content: flex-start;
-  margin-left: 1rem;
-}
-.logo-home {
-  padding-right: 1rem;
-  padding-top: 1rem;
-  width: 100%;
-  height: 50%;
-  margin-top: -2rem;
-}
+  .logo {
+    width: 50vw;
+    justify-content: flex-start;
+    margin-left: 1rem;
+  }
+  .logo-home {
+    padding-right: 1rem;
+    padding-top: 1rem;
+    width: 100%;
+    height: 50%;
+    margin-top: -2rem;
+  }
 }
 </style>
