@@ -10,7 +10,7 @@
         <div class="d-flex flex-column align-start sec1-a">
           <p class="font-weight-bold">MÉXICO · ESPAÑA · ESTADOS UNIDOS</p>
           <span class="hr"></span>
-          <h1 class="mt-4 mb-4">Somos una Multifirma</h1>
+          <h1 class="mt-4 mb-4">Somos una Firma</h1>
           <p class="txt-e">
             La mayoría de los despachos de nuestro nivel, son locales, y el que
             tiene cierta inquietud internacional forma una simple alianza,
