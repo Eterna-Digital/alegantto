@@ -12,12 +12,13 @@
           <span class="hr"></span>
           <h1 class="mt-4 mb-4">Somos una Firma</h1>
           <p class="txt-e">
-            La mayoría de los despachos de nuestro nivel, son locales, y el que
-            tiene cierta inquietud internacional forma una simple alianza,
-            nosotros vamos más allá creando un mismo despacho, con una misma
-            filosofía.<br /><br />
-            Todo surge de la vinculación entre Asturias y Mexico… una región que
-            tuvo una emigración masiva a Mexico en los S. XIX y XX.
+            Nuestra filosofía de negocio se ha adaptado al crecimiento unilateral del despacho, 
+            logrando así tener un modelo inteligente de gestión legal que puede implementarse 
+            en todo el mundo. Nuestro trabajo es el mismo sin importar en qué sitio del mundo 
+            nos contrates, y por lo mismo si alguno de nuestros clientes viaja, puede visitar 
+            cualquiera de nuestras oficinas para recibir información, servicio y constancia de 
+            lo qué pasa en su negocio. Es por esto que nosotros somos una firma con sede en 
+            varios puntos del mundo regidos por una misma ideología.
           </p>
         </div>
         <div class="color-block ma-0 pa-0"></div>
